@@ -84,14 +84,9 @@ section
     font-size: 38px;
     font-weight: 800;
     margin: 0;
-}
-
-.about h2
-{
     margin-bottom: 26px;
-    color: #f4d35e;
+    color: white;
 }
-
 .about-content
 {
     display: flex;
@@ -107,7 +102,7 @@ section
 
 .text-box p
 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.55;
     opacity: 0.86;
     margin: 0;
