@@ -256,6 +256,7 @@ section
 
 .quote-section
 {
+    position: relative;
     align-items: center;
     text-align: center;
     background: radial-gradient(circle at bottom, #172238 0%, #0b0f17 62%);
@@ -334,4 +335,47 @@ section
     {
         font-size: 36px;
     }
+
+    .quelle
+    {
+        left: 24px;
+        bottom: 36px;
+        max-width: calc(100% - 48px);
+        overflow: hidden;
+    }
+
+    .quelle_inner h2,
+    .quelle_inner p
+    {
+        font-size: 13px;
+    }
+
+}
+.quelle
+{
+    position: absolute;
+    left: 72px;
+    bottom: 48px;
+    z-index: 10;
+}
+
+.quelle_inner
+{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.quelle_inner h2,
+.quelle_inner p
+{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.quelle_inner h2
+{
+    color: #f4d35e;
 }
