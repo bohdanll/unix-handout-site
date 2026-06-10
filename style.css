@@ -1,102 +1,14 @@
-.hero
+html
 {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+    scroll-behavior: smooth;
+}
 
-    background: radial-gradient(circle at top, #1e1e1e, #121a2a, #070a10);
-    color: white;
-
-}
-.hero h1
-{
-    font-size: 64px;
-    font-weight: 800;
-    margin: 0;
-    letter-spacing: 2px;
-}
-.hero p
-{
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0.8;
-    margin-top: 10px;
-    max-width: 500px;    
-}
-.arrow
-{
-    margin-top: 40px;
-    font-size: 28px;
-    color: white;
-    opacity: 0.6;
-    text-decoration: none;
-    transition: 0.2s;
-}
-.arrow:hover
-{
-    opacity: 1;
-    transform: translateY(5px);
-}
-.about
-{
-    min-height: 100vh;
-    background: #0b0f17;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 32px 56px;
-}
-.about h2
-{
-    font-size: 34px;
-    font-weight: 600;
-    margin: 0 0 24px;
-    color: yellow;
-}
-.about-content
-{
-    display: grid;
-    grid-template-columns: minmax(280px, 5fr) minmax(320px, 7fr);
-    align-items: center;
-
-    gap: 36px;
-}
-.text-box
-{
-    max-width: 500px;
-    
-}
-.text-box p
-{
-    font-size: 23px;
-    line-height: 1.8;  
-    opacity: 0.85;
-    margin: 0;
-}
-    
-
-.image-box
-{
-    min-width: 0;
-}
-.image-box img
-{
-    width: 100%;
-    max-height: 62vh;
-    object-fit: contain;
-    border-radius: 12px;
-}
 body
 {
-    font-family: 'Inter', sans-serif;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: #0b0f17;
     box-sizing: border-box;
 }
 
@@ -105,17 +17,296 @@ body
     box-sizing: inherit;
 }
 
-@media (max-width: 800px)
+section
 {
-    .about
+    min-height: 100vh;
+    padding: 48px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero
+{
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #242424, #121a2a 45%, #070a10 100%);
+}
+
+.hero h1
+{
+    font-size: 72px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.hero p
+{
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 12px 0 0;
+    max-width: 560px;
+}
+
+.arrow
+{
+    width: 44px;
+    height: 44px;
+    margin: 34px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    line-height: 1;
+    opacity: 0.65;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.arrow:hover,
+.back-link:hover
+{
+    opacity: 1;
+    transform: translateY(4px);
+}
+
+.about
+{
+    background: linear-gradient(135deg, #0b0f17 0%, #101827 58%, #0b0f17 100%);
+}
+
+.about h2,
+.section-heading h2
+{
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.about h2
+{
+    margin-bottom: 26px;
+    color: #f4d35e;
+}
+
+.about-content
+{
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.text-box
+{
+    flex: 5;
+    max-width: 560px;
+}
+
+.text-box p
+{
+    font-size: 20px;
+    line-height: 1.55;
+    opacity: 0.86;
+    margin: 0;
+}
+
+.image-box
+{
+    flex: 7;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img
+{
+    width: 100%;
+    max-height: 56vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.legacy
+{
+    align-items: center;
+    background: radial-gradient(circle at center, #172238 0%, #0b0f17 68%);
+    text-align: center;
+}
+
+.section-heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 42px;
+}
+
+.section-heading span
+{
+    font-size: 14px;
+    font-weight: 800;
+    color: #f4d35e;
+    opacity: 0.9;
+}
+
+.timeline
+{
+    width: min(960px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-node
+{
+    min-width: 170px;
+    padding: 18px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.timeline-node strong
+{
+    font-size: 22px;
+}
+
+.timeline-node span
+{
+    font-size: 15px;
+    color: #cfd6e6;
+}
+
+.main-node
+{
+    border-color: rgba(244, 211, 94, 0.65);
+}
+
+.timeline-line
+{
+    width: 2px;
+    height: 58px;
+    background: linear-gradient(#f4d35e, rgba(255, 255, 255, 0.3));
+}
+
+.timeline-branches
+{
+    width: 100%;
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.uses
+{
+    background: linear-gradient(160deg, #0b0f17 0%, #141820 52%, #0d1624 100%);
+}
+
+.use-cards
+{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.use-card
+{
+    flex: 1;
+    min-height: 250px;
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.055);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-icon
+{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(244, 211, 94, 0.12);
+    color: #f4d35e;
+    font-size: 28px;
+}
+
+.use-card h3
+{
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.use-card p
+{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #cfd6e6;
+}
+
+.quote-section
+{
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at bottom, #172238 0%, #0b0f17 62%);
+}
+
+.quote-section blockquote
+{
+    max-width: 920px;
+    margin: 0;
+    font-size: 52px;
+    line-height: 1.16;
+    font-weight: 800;
+}
+
+.back-link
+{
+    margin-top: 42px;
+    color: #f4d35e;
+    font-size: 17px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+@media (max-width: 900px)
+{
+    section
     {
-        padding: 28px 24px;
+        padding: 36px 24px;
+    }
+
+    .hero h1
+    {
+        font-size: 56px;
+    }
+
+    .about-content,
+    .timeline-branches,
+    .use-cards
+    {
+        flex-direction: column;
     }
 
     .about-content
     {
-        grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 28px;
     }
 
     .text-box
@@ -123,8 +314,29 @@ body
         max-width: none;
     }
 
+    .text-box p
+    {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
     .image-box img
     {
         max-height: 34vh;
+    }
+
+    .timeline-node
+    {
+        width: 100%;
+    }
+
+    .use-card
+    {
+        min-height: auto;
+    }
+
+    .quote-section blockquote
+    {
+        font-size: 36px;
     }
 }

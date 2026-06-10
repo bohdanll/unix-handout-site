@@ -1,43 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<link rel="preconnect" href"https://fonts.googleapis.com">
-<link rel="preconnect" href"https://fonts.gstatic.com" crossorigin">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<title>Unix</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Unix</title>
 </head>
 <body>
-<section class ="hero">
-<h1>Unix</h1>
-<p>Vom Terminal zu Android und dem modernen Internet</p>
-<a href="#about" class="arrow">↓</a>
-</section>
+    <section class="hero" id="hero">
+        <h1>Unix</h1>
+        <p>Vom Terminal zu Android und dem modernen Internet</p>
+        <a href="#about" class="arrow" aria-label="Zur naechsten Sektion">&darr;</a>
+    </section>
 
-<section class="about" id="about">
-
-    <h2>Was ist Unix?</h2>
-    <div class="about-content">
-
-        <div class="text-box">  
-            <p>
-                Unix ist ein Betriebssystem, das 1969 entstand.
-                Seine Ideen bildeten die Grundlage moderner Technologien,
-                darunter Linux und Android.
-                In seinen Anfängen besaß Unix keine herkömmliche grafische Benutzeroberfläche.
-                Die gesamte Steuerung erfolgte über das Terminal – einen schwarzen Bildschirm und Befehlszeilen.
-                Trotz seiner Einfachheit war es gerade dieser Ansatz, 
-                der das System unglaublich leistungsstark und flexibel machte und die Grundlage für moderne Betriebssysteme legte.
-            </p>
+    <section class="about" id="about">
+        <h2>Was ist Unix?</h2>
+        <div class="about-content">
+            <div class="text-box">
+                <p>
+                    Unix ist ein Betriebssystem, das 1969 entstand.
+                    Seine Ideen bildeten die Grundlage moderner Technologien,
+                    darunter Linux und Android. In seinen Anf&auml;ngen besa&szlig; Unix
+                    keine herk&ouml;mmliche grafische Benutzeroberfl&auml;che. Die gesamte
+                    Steuerung erfolgte &uuml;ber das Terminal.
+                </p>
+            </div>
+            <div class="image-box">
+                <img src="unix.jpg" alt="Unix Terminal">
+            </div>
         </div>
-        <div class="image-box">
-            <img src="unix.jpg" alt="Unix Terminal">
-    </div>
-</section>
+        <a href="#legacy" class="arrow" aria-label="Zur naechsten Sektion">&darr;</a>
+    </section>
 
+    <section class="legacy" id="legacy">
+        <div class="section-heading">
+            <span>03</span>
+            <h2>Das Erbe von Unix</h2>
+        </div>
 
+        <div class="timeline">
+            <div class="timeline-node main-node">
+                <strong>Unix</strong>
+                <span>1969</span>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-node">
+                <strong>Linux</strong>
+                <span>1991</span>
+            </div>
+            <div class="timeline-branches">
+                <div class="timeline-node">
+                    <strong>Android</strong>
+                    <span>Smartphones</span>
+                </div>
+                <div class="timeline-node">
+                    <strong>macOS</strong>
+                    <span>Computer</span>
+                </div>
+                <div class="timeline-node">
+                    <strong>Server</strong>
+                    <span>Internet</span>
+                </div>
+            </div>
+        </div>
 
+        <a href="#uses" class="arrow" aria-label="Zur naechsten Sektion">&darr;</a>
+    </section>
+
+    <section class="uses" id="uses">
+        <div class="section-heading">
+            <span>04</span>
+            <h2>Wo Unix heute steckt</h2>
+        </div>
+
+        <div class="use-cards">
+            <article class="use-card">
+                <div class="card-icon">&#9638;</div>
+                <h3>Server</h3>
+                <p>Websites, Datenbanken und Cloud-Systeme laufen oft auf Unix-&auml;hnlichen Systemen.</p>
+            </article>
+            <article class="use-card">
+                <div class="card-icon">&#9647;</div>
+                <h3>Smartphones</h3>
+                <p>Android basiert auf Linux und tr&auml;gt Unix-Ideen in Milliarden Ger&auml;ten weiter.</p>
+            </article>
+            <article class="use-card">
+                <div class="card-icon">&#9707;</div>
+                <h3>Computer</h3>
+                <p>macOS und viele Entwicklerwerkzeuge nutzen Konzepte aus der Unix-Welt.</p>
+            </article>
+            <article class="use-card">
+                <div class="card-icon">&#9678;</div>
+                <h3>Internet</h3>
+                <p>Router, Dienste und Infrastruktur folgen bis heute dem Prinzip stabiler Systeme.</p>
+            </article>
+        </div>
+
+        <a href="#quote" class="arrow" aria-label="Zur naechsten Sektion">&darr;</a>
+    </section>
+
+    <section class="quote-section" id="quote">
+        <blockquote>
+            Unix ist unsichtbar geworden, weil seine Ideen &uuml;berall sind.
+        </blockquote>
+        <a href="#hero" class="back-link">Zur&uuml;ck zum Anfang</a>
+    </section>
 </body>
 </html>
-
